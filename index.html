@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Dimensions of DNA – Congress 2025</title>
+<meta name="theme-color" content="#f5f5f5">
+<meta name="description" content="Multidisciplinary congress on DNA science. 50 € poster / 100 € passive. Belgrade, 2025.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%234a6fa5'/%3E%3Cpath d='M30 50 L70 50 M50 30 L50 70' stroke='%23ffffff' stroke-width='8'/%3E%3C/svg%3E">
+<style>
+/* ----------  NEUTRAL & EYE-FRIENDLY  ---------- */
+:root{
+  --bg:#f5f5f5;       /* warm white */
+  --text:#2d2d2d;     /* soft charcoal */
+  --accent:#4a6fa5;   /* muted blue */
+  --highlight:#e5e5e5;/* light grey dividers */
+}
+*{box-sizing:border-box;margin:0;padding:0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif}
+body{background:var(--bg);color:var(--text);line-height:1.6}
+a{color:var(--accent);text-decoration:none}
+section{padding:clamp(1rem,4vw,3rem) clamp(.5rem,4vw,2rem);max-width:900px;margin:auto}
+h1,h2,h3{line-height:1.2;margin-bottom:.5em;font-weight:600}
+.btn{display:inline-block;margin:.3em 0;padding:.6em 1.2em;border:2px solid var(--accent);background:var(--accent);color:#fff;font-weight:600;cursor:pointer;transition:.2s;border-radius:4px}
+.btn:hover{background:transparent;color:var(--accent)}
+header{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;background:var(--highlight);padding:1rem 2rem;border-radius:8px;margin:1rem auto;max-width:900px}
+nav ul{display:flex;flex-wrap:wrap;gap:1rem;list-style:none}
+video{width:100%;max-width:800px;height:auto;display:block;margin:auto;border-radius:8px}
+details{margin:.5em 0;border:1px solid var(--highlight);padding:.5em;border-radius:4px;background:#fff}
+summary{cursor:pointer;font-weight:600}
+form input,form select,form textarea{width:100%;padding:.5em;margin:.3em 0;background:#fff;color:var(--text);border:1px solid var(--highlight);border-radius:4px}
+form input[type=submit]{cursor:pointer}
+@media(max-width:600px){nav ul{flex-direction:column;gap:.3rem}}
+</style>
+</head>
+<body>
+
+<!-- ----------  HEADER  ---------- -->
+<header>
+  <h1>Dimensions of DNA:<br>A Multidisciplinary Perspective</h1>
+  <nav>
+    <ul>
+      <li><a href="#program">Program</a></li>
+      <li><a href="#register">Register</a></li>
+      <li><a href="#video">Video</a></li>
+      <li><a href="#repo">Repository</a></li>
+      <li><a href="#board">Board</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- ----------  VIDEO  ---------- -->
+<section id="video">
+  <h2>Congress Trailer</h2>
+  <lite-youtube videoid="JEtFet4WQLg" params="rel=0" style="background:#fff;border-radius:8px;overflow:hidden"></lite-youtube>
+</section>
+
+<!-- ----------  PROGRAM  ---------- -->
+<section id="program">
+  <h2>Scientific Program</h2>
+  <p>All submissions undergo double-blind peer review.</p>
+  <details>
+    <summary>1. Scientific & Technological Advances</summary>
+    <ul>
+      <li>DNA structure, function, regulation</li>
+      <li>Genomics, transcriptomics, epigenetics</li>
+      <li>CRISPR & genome editing</li>
+      <li>Sequencing & bioinformatics</li>
+      <li>Synthetic biology, DNA computing</li>
+    </ul>
+  </details>
+  <details>
+    <summary>2. Health, Medicine & Personalized Care</summary>
+    <ul>
+      <li>Pharmacogenomics</li>
+      <li>Gene therapy, rare diseases</li>
+      <li>Ethics of enhancement</li>
+    </ul>
+  </details>
+  <details>
+    <summary>3. Education & Public Understanding</summary>
+  </details>
+  <details>
+    <summary>4. Forensics, History & Anthropology</summary>
+  </details>
+  <details>
+    <summary>5-8. Geo-Genomics & eDNA</summary>
+  </details>
+  <a class="btn" href="https://github.com/YOUR-REPO/raw/main/program.pdf" download>Download Full Program (PDF)</a>
+</section>
+
+<!-- ----------  REGISTRATION  ---------- -->
+<section id="register">
+  <h2>Registration & Payment</h2>
+  <form id="regForm" autocomplete="off">
+    <input name="name" placeholder="Full name" required>
+    <input type="email" name="email" placeholder="E-mail" required>
+    <input name="institution" placeholder="Institution">
+    <select name="country" required>
+      <option value="">Country</option>
+      <option>Serbia</option><option>Montenegro</option><option>Greece</option><option>Romania</option>
+      <option>Moldova</option><option>Slovenia</option><option>Slovakia</option><option>Azerbaijan</option>
+      <option>Other</option>
+    </select>
+    <select name="type" required>
+      <option value="">Participation type</option>
+      <option value="poster">Poster / Video presentation – 50 €</option>
+      <option value="passive">Passive attendance – 100 €</option>
+    </select>
+    <textarea name="abstract" rows="4" placeholder="Abstract title (optional for passive)"></textarea>
+    <input type="submit" class="btn" value="Register & generate invoice">
+  </form>
+  <p id="regMsg"></p>
+</section>
+
+<!-- ----------  REPOSITORY  ---------- -->
+<section id="repo">
+  <h2>Post-congress Repository</h2>
+  <p>All accepted works are archived in:</p>
+  <ul>
+    <li><a href="https://apps.who.int/iris" target="_blank">WHO IRIS</a></li>
+    <li><a href="https://publications.jrc.ec.europa.eu" target="_blank">JRC Publications Repository</a></li>
+    <li><a href="https://data.europa.eu" target="_blank">EU Open Research Repository</a></li>
+    <li><a href="https://dans.knaw.nl" target="_blank">DANS (Dutch national centre)</a></li>
+  </ul>
+  <a class="btn" href="https://github.com/YOUR-REPO/raw/main/abstract_book.pdf" download>Abstract Book (PDF)</a>
+  <a class="btn" href="https://github.com/YOUR-REPO/raw/main/proceedings.pdf" download>Proceedings (PDF)</a>
+  <a class="btn" href="https://github.com/YOUR-REPO/raw/main/event_report.pdf" download>Event Report (PDF)</a>
+</section>
+
+<!-- ----------  SCIENTIFIC BOARD  ---------- -->
+<section id="board">
+  <h2>Scientific Board</h2>
+  <ul>
+    <li>Prof. Milena Jović (U. Belgrade) – Chair</li>
+    <li>Dr. Ioannis Georgiou (U. Athens)</li>
+    <li>Dr. Alina Popescu (U. Bucharest)</li>
+    <li>Dr. Marko Zupan (U. Ljubljana)</li>
+    <li>Dr. Leyla Ahmedova (ANAS, Baku)</li>
+  </ul>
+</section>
+
+<!-- ----------  FOOTER  ---------- -->
+<footer style="text-align:center;padding:1rem;font-size:.8em;background:var(--highlight);border-radius:8px;max-width:900px;margin:1rem auto">
+  © 2025 DNA Congress Org. | <a href="mailto:info@dnacongress.org">info@dnacongress.org</a>
+</footer>
+
+<!-- ----------  SERVICE WORKER  ---------- -->
+<script>
+if('serviceWorker' in navigator){
+  const sw='data:text/javascript;base64,'+btoa(`
+  const C='dna-v1';
+  self.addEventListener('install',e=>{
+    e.waitUntil(caches.open(C).then(c=>c.addAll(['/'])))
+  });
+  self.addEventListener('fetch',e=>{
+    e.respondWith(caches.match(e.request).then(r=>r||fetch(e.request)))
+  })`);
+  navigator.serviceWorker.register(sw);
+}
+</script>
+
+<!-- ----------  LITE YOUTUBE  ---------- -->
+<script>
+class LiteYTE extends HTMLElement{
+  connectedCallback(){
+    const id=this.getAttribute('videoid');
+    this.innerHTML=`<button style="width:100%;height:0;padding-bottom:56.25%;position:relative;border:0;cursor:pointer;background:#f5f5f5;border-radius:8px;overflow:hidden"><svg style="position:absolute;top:50%;left:50%;width:80px;height:80px;transform:translate(-50%,-50%)" viewBox="0 0 24 24"><path fill="%234a6fa5" d="M8 5v14l11-7z"/></svg></button>`;
+    this.onclick=()=>this.innerHTML=`<iframe style="position:absolute;top:0;left:0;width:100%;height:100%" src="https://www.youtube.com/embed/${id}?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
+  }
+}
+customElements.define('lite-youtube',LiteYTE);
+</script>
+
+<!-- ----------  REGISTRATION HANDLER  ---------- -->
+<script>
+document.getElementById('regForm').onsubmit=async(e)=>{
+  e.preventDefault();
+  const fd=new FormData(e.target);
+  const data=Object.fromEntries(fd);
+  data.fee=data.type==='poster'?50:100;
+  const zap='https://hooks.zapier.com/hooks/catch/YOUR/ZAP/URL';
+  await fetch(zap,{method:'POST',body:JSON.stringify(data),headers:{'Content-Type':'application/json'}});
+  document.getElementById('regMsg').textContent='Invoice sent to your e-mail. Pay via bank transfer to complete registration.';
+  e.target.reset();
+};
+</script>
+</body>
+</html>
