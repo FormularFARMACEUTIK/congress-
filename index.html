@@ -3,186 +3,126 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Dimensions of DNA – Congress 2025</title>
-<meta name="theme-color" content="#f5f5f5">
-<meta name="description" content="Multidisciplinary congress on DNA science. 50 € poster / 100 € passive. Belgrade, 2025.">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%234a6fa5'/%3E%3Cpath d='M30 50 L70 50 M50 30 L50 70' stroke='%23ffffff' stroke-width='8'/%3E%3C/svg%3E">
+<title>Dimensions of DNA – Multidisciplinary Congress 2025</title>
+<meta name="description" content="International congress on DNA science, medicine, education, forensics and geo-genomics. 50 € poster / 100 € passive.">
 <style>
-/* ----------  NEUTRAL & EYE-FRIENDLY  ---------- */
+/* ----------  neutral palette  ---------- */
 :root{
-  --bg:#f5f5f5;       /* warm white */
-  --text:#2d2d2d;     /* soft charcoal */
-  --accent:#4a6fa5;   /* muted blue */
-  --highlight:#e5e5e5;/* light grey dividers */
+  --bg:#ffffff;
+  --bg2:#f4f7fb;
+  --text:#222;
+  --accent:#4a6fa5;
+  --wave:#4a6fa5;
 }
-*{box-sizing:border-box;margin:0;padding:0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif}
-body{background:var(--bg);color:var(--text);line-height:1.6}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--text);line-height:1.6}
+img{max-width:100%;display:block}
 a{color:var(--accent);text-decoration:none}
-section{padding:clamp(1rem,4vw,3rem) clamp(.5rem,4vw,2rem);max-width:900px;margin:auto}
-h1,h2,h3{line-height:1.2;margin-bottom:.5em;font-weight:600}
-.btn{display:inline-block;margin:.3em 0;padding:.6em 1.2em;border:2px solid var(--accent);background:var(--accent);color:#fff;font-weight:600;cursor:pointer;transition:.2s;border-radius:4px}
-.btn:hover{background:transparent;color:var(--accent)}
-header{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;background:var(--highlight);padding:1rem 2rem;border-radius:8px;margin:1rem auto;max-width:900px}
-nav ul{display:flex;flex-wrap:wrap;gap:1rem;list-style:none}
-video{width:100%;max-width:800px;height:auto;display:block;margin:auto;border-radius:8px}
-details{margin:.5em 0;border:1px solid var(--highlight);padding:.5em;border-radius:4px;background:#fff}
-summary{cursor:pointer;font-weight:600}
-form input,form select,form textarea{width:100%;padding:.5em;margin:.3em 0;background:#fff;color:var(--text);border:1px solid var(--highlight);border-radius:4px}
-form input[type=submit]{cursor:pointer}
-@media(max-width:600px){nav ul{flex-direction:column;gap:.3rem}}
+.btn{display:inline-block;margin:.5rem 0;padding:.75rem 1.5rem;background:var(--accent);color:#fff;border-radius:4px;font-weight:600;transition:.2s}
+.btn:hover{background:#3a5a8a}
+section{padding:clamp(2rem,5vw,4rem) clamp(.5rem,4vw,2rem)}
+.container{max-width:1100px;margin:auto}
+
+/* ----------  hero  ---------- */
+.hero{background:var(--bg2);text-align:center;position:relative;overflow:hidden}
+.hero h1{font-size:clamp(1.8rem,5vw,3rem);margin-bottom:.5em}
+.hero p{font-size:1.1rem;margin-bottom:1.5em}
+.hero::after{content:"";position:absolute;bottom:-1px;left:0;width:100%;height:60px;background:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none"><path fill="%23ffffff" d="M0 0v46.29c47.79 22.2 103.59 32.17 158 28 70.36-5.37 136.33-33.31 206.8-37.5 73.84-4.36 147.54 16.88 218.2 35.26 69.27 18 138.3 24.88 209.4 13.08 36.15-6 69.85-17.84 104.45-29.34C989.49 25 1113-14.29 1200 52.47V0z"/></svg>');background-size:1200px 60px}
+
+/* ----------  features 3 col  ---------- */
+.grid{display:grid;gap:2rem;grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+.card{background:var(--bg2);padding:2rem;border-radius:8px;text-align:center}
+.card h3{margin:.5em 0}
+
+/* ----------  footer  ---------- */
+footer{background:#1e1e1e;color:#ccc;text-align:center;padding:2rem 1rem}
 </style>
 </head>
 <body>
 
-<!-- ----------  HEADER  ---------- -->
-<header>
-  <h1>Dimensions of DNA:<br>A Multidisciplinary Perspective</h1>
-  <nav>
-    <ul>
-      <li><a href="#program">Program</a></li>
-      <li><a href="#register">Register</a></li>
-      <li><a href="#video">Video</a></li>
-      <li><a href="#repo">Repository</a></li>
-      <li><a href="#board">Board</a></li>
-    </ul>
-  </nav>
-</header>
-
-<!-- ----------  VIDEO  ---------- -->
-<section id="video">
-  <h2>Congress Trailer</h2>
-  <lite-youtube videoid="JEtFet4WQLg" params="rel=0" style="background:#fff;border-radius:8px;overflow:hidden"></lite-youtube>
+<!-- ----------  HERO  ---------- -->
+<section class="hero">
+  <div class="container">
+    <!-- 1. replace with your logo -->
+    <img src="assets/logo.webp" alt="DNA Congress logo" width="200" style="margin:0 auto 1rem">
+    <h1>Dimensions of DNA:<br>A Multidisciplinary Perspective</h1>
+    <p>22-24 October 2025 &nbsp;•&nbsp; Hybrid (Belgrade + online)</p>
+    <a class="btn" href="#register">Register now</a>
+    <a class="btn" href="#program" style="background:transparent;color:var(--accent);border:2px solid">View program</a>
+  </div>
 </section>
 
-<!-- ----------  PROGRAM  ---------- -->
-<section id="program">
-  <h2>Scientific Program</h2>
-  <p>All submissions undergo double-blind peer review.</p>
-  <details>
-    <summary>1. Scientific & Technological Advances</summary>
-    <ul>
-      <li>DNA structure, function, regulation</li>
-      <li>Genomics, transcriptomics, epigenetics</li>
-      <li>CRISPR & genome editing</li>
-      <li>Sequencing & bioinformatics</li>
-      <li>Synthetic biology, DNA computing</li>
-    </ul>
-  </details>
-  <details>
-    <summary>2. Health, Medicine & Personalized Care</summary>
-    <ul>
-      <li>Pharmacogenomics</li>
-      <li>Gene therapy, rare diseases</li>
-      <li>Ethics of enhancement</li>
-    </ul>
-  </details>
-  <details>
-    <summary>3. Education & Public Understanding</summary>
-  </details>
-  <details>
-    <summary>4. Forensics, History & Anthropology</summary>
-  </details>
-  <details>
-    <summary>5-8. Geo-Genomics & eDNA</summary>
-  </details>
-  <a class="btn" href="https://github.com/YOUR-REPO/raw/main/program.pdf" download>Download Full Program (PDF)</a>
+<!-- ----------  FEATURES  ---------- -->
+<section id="features">
+  <div class="container grid">
+    <div class="card">
+      <!-- 2. replace icon if you want -->
+      <img src="assets/icon-science.svg" alt="" width="60" style="margin:0 auto 1rem">
+      <h3>Scientific Advances</h3>
+      <p>CRISPR, epigenomics, synthetic biology, DNA computing and more.</p>
+    </div>
+    <div class="card">
+      <img src="assets/icon-health.svg" alt="" width="60" style="margin:0 auto 1rem">
+      <h3>Health & Medicine</h3>
+      <p>Gene therapy, pharmacogenomics, rare-disease diagnostics.</p>
+    </div>
+    <div class="card">
+      <img src="assets/icon-earth.svg" alt="" width="60" style="margin:0 auto 1rem">
+      <h3>Geo-Genomics</h3>
+      <p>Ancient & environmental DNA, paleogenomics, ethics of sampling.</p>
+    </div>
+  </div>
 </section>
 
-<!-- ----------  REGISTRATION  ---------- -->
-<section id="register">
-  <h2>Registration & Payment</h2>
-  <form id="regForm" autocomplete="off">
-    <input name="name" placeholder="Full name" required>
-    <input type="email" name="email" placeholder="E-mail" required>
-    <input name="institution" placeholder="Institution">
-    <select name="country" required>
-      <option value="">Country</option>
-      <option>Serbia</option><option>Montenegro</option><option>Greece</option><option>Romania</option>
-      <option>Moldova</option><option>Slovenia</option><option>Slovakia</option><option>Azerbaijan</option>
-      <option>Other</option>
-    </select>
-    <select name="type" required>
-      <option value="">Participation type</option>
-      <option value="poster">Poster / Video presentation – 50 €</option>
-      <option value="passive">Passive attendance – 100 €</option>
-    </select>
-    <textarea name="abstract" rows="4" placeholder="Abstract title (optional for passive)"></textarea>
-    <input type="submit" class="btn" value="Register & generate invoice">
-  </form>
-  <p id="regMsg"></p>
-</section>
-
-<!-- ----------  REPOSITORY  ---------- -->
-<section id="repo">
-  <h2>Post-congress Repository</h2>
-  <p>All accepted works are archived in:</p>
-  <ul>
-    <li><a href="https://apps.who.int/iris" target="_blank">WHO IRIS</a></li>
-    <li><a href="https://publications.jrc.ec.europa.eu" target="_blank">JRC Publications Repository</a></li>
-    <li><a href="https://data.europa.eu" target="_blank">EU Open Research Repository</a></li>
-    <li><a href="https://dans.knaw.nl" target="_blank">DANS (Dutch national centre)</a></li>
-  </ul>
-  <a class="btn" href="https://github.com/YOUR-REPO/raw/main/abstract_book.pdf" download>Abstract Book (PDF)</a>
-  <a class="btn" href="https://github.com/YOUR-REPO/raw/main/proceedings.pdf" download>Proceedings (PDF)</a>
-  <a class="btn" href="https://github.com/YOUR-REPO/raw/main/event_report.pdf" download>Event Report (PDF)</a>
+<!-- ----------  DOWNLOAD FORMS  ---------- -->
+<section id="forms" style="background:var(--bg2)">
+  <div class="container">
+    <h2 style="text-align:center;margin-bottom:1.5rem">Congress Forms</h2>
+    <div class="grid" style="gap:1rem;grid-template-columns:repeat(auto-fit,minmax(200px,1fr))">
+      <a class="btn" href="assets/form-registration.pdf" download>Registration form</a>
+      <a class="btn" href="assets/abstract-template.docx" download>Abstract template</a>
+      <a class="btn" href="assets/poster-template.pptx" download>Poster template</a>
+    </div>
+  </div>
 </section>
 
 <!-- ----------  SCIENTIFIC BOARD  ---------- -->
 <section id="board">
-  <h2>Scientific Board</h2>
-  <ul>
-    <li>Prof. Milena Jović (U. Belgrade) – Chair</li>
-    <li>Dr. Ioannis Georgiou (U. Athens)</li>
-    <li>Dr. Alina Popescu (U. Bucharest)</li>
-    <li>Dr. Marko Zupan (U. Ljubljana)</li>
-    <li>Dr. Leyla Ahmedova (ANAS, Baku)</li>
-  </ul>
+  <div class="container">
+    <h2>Scientific Board</h2>
+    <ul style="columns:2 300px;gap:2rem;margin-top:1rem">
+      <li>Prof. Milena Jović (U. Belgrade) – Chair</li>
+      <li>Dr. Ioannis Georgiou (U. Athens)</li>
+      <li>Dr. Alina Popescu (U. Bucharest)</li>
+      <li>Dr. Marko Zupan (U. Ljubljana)</li>
+      <li>Dr. Leyla Ahmedova (ANAS, Baku)</li>
+    </ul>
+  </div>
 </section>
 
 <!-- ----------  FOOTER  ---------- -->
-<footer style="text-align:center;padding:1rem;font-size:.8em;background:var(--highlight);border-radius:8px;max-width:900px;margin:1rem auto">
-  © 2025 DNA Congress Org. | <a href="mailto:info@dnacongress.org">info@dnacongress.org</a>
+<footer>
+  <div class="container">
+    <p>© 2025 DNA Congress Org.</p>
+    <p><a href="mailto:info@dnacongress.org">info@dnacongress.org</a></p>
+  </div>
 </footer>
 
 <!-- ----------  SERVICE WORKER  ---------- -->
 <script>
 if('serviceWorker' in navigator){
-  const sw='data:text/javascript;base64,'+btoa(`
-  const C='dna-v1';
+  const code=`
+  const CACHE='dna-v1';
   self.addEventListener('install',e=>{
-    e.waitUntil(caches.open(C).then(c=>c.addAll(['/'])))
+    e.waitUntil(caches.open(CACHE).then(c=>c.addAll(['/','/index.html'])))
   });
   self.addEventListener('fetch',e=>{
     e.respondWith(caches.match(e.request).then(r=>r||fetch(e.request)))
-  })`);
-  navigator.serviceWorker.register(sw);
+  })`;
+  const blob=new Blob([code],{type:'application/javascript'});
+  const url=URL.createObjectURL(blob);
+  navigator.serviceWorker.register(url);
 }
-</script>
-
-<!-- ----------  LITE YOUTUBE  ---------- -->
-<script>
-class LiteYTE extends HTMLElement{
-  connectedCallback(){
-    const id=this.getAttribute('videoid');
-    this.innerHTML=`<button style="width:100%;height:0;padding-bottom:56.25%;position:relative;border:0;cursor:pointer;background:#f5f5f5;border-radius:8px;overflow:hidden"><svg style="position:absolute;top:50%;left:50%;width:80px;height:80px;transform:translate(-50%,-50%)" viewBox="0 0 24 24"><path fill="%234a6fa5" d="M8 5v14l11-7z"/></svg></button>`;
-    this.onclick=()=>this.innerHTML=`<iframe style="position:absolute;top:0;left:0;width:100%;height:100%" src="https://www.youtube.com/embed/${id}?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
-  }
-}
-customElements.define('lite-youtube',LiteYTE);
-</script>
-
-<!-- ----------  REGISTRATION HANDLER  ---------- -->
-<script>
-document.getElementById('regForm').onsubmit=async(e)=>{
-  e.preventDefault();
-  const fd=new FormData(e.target);
-  const data=Object.fromEntries(fd);
-  data.fee=data.type==='poster'?50:100;
-  const zap='https://hooks.zapier.com/hooks/catch/YOUR/ZAP/URL';
-  await fetch(zap,{method:'POST',body:JSON.stringify(data),headers:{'Content-Type':'application/json'}});
-  document.getElementById('regMsg').textContent='Invoice sent to your e-mail. Pay via bank transfer to complete registration.';
-  e.target.reset();
-};
 </script>
 </body>
 </html>
